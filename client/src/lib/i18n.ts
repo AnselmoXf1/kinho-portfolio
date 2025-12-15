@@ -12,8 +12,8 @@ const resources = {
         contact: "Contact"
       },
       hero: {
-        title: "Kinho",
-        subtitle: "Programmer & Designer",
+        title: "Isidro Helder Guiamba",
+        subtitle: "Known as 'Kinho' | Programmer & Designer",
         tagline: "Transforming Ideas into Functional Digital Products",
         cta: "View My Work"
       },
@@ -63,8 +63,8 @@ const resources = {
         contact: "Contacto"
       },
       hero: {
-        title: "Kinho",
-        subtitle: "Programador e Designer",
+        title: "Isidro Helder Guiamba",
+        subtitle: "Conhecido por 'Kinho' | Programador e Designer",
         tagline: "Transformando Ideias em Produtos Digitais Funcionais",
         cta: "Ver Meu Trabalho"
       },
@@ -114,8 +114,8 @@ const resources = {
         contact: "Contacto"
       },
       hero: {
-        title: "Kinho",
-        subtitle: "Programador y Diseñador",
+        title: "Isidro Helder Guiamba",
+        subtitle: "Conocido como 'Kinho' | Programador y Diseñador",
         tagline: "Transformando Ideas en Productos Digitales Funcionales",
         cta: "Ver Mi Trabajo"
       },
