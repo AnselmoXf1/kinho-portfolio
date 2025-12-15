@@ -20,7 +20,7 @@ export function Contact() {
           className="mb-12 text-center max-w-2xl mx-auto"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="text-primary">05.</span> {t('contact.title')}
+            {t('contact.title')}
           </h2>
           <p className="text-muted-foreground">
             Have a project in mind or just want to say hello? I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.

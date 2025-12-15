@@ -18,7 +18,7 @@ export function About() {
         >
           <div className="order-2 md:order-1">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 flex items-center gap-3">
-              <span className="text-primary">01.</span> {t('about.title')}
+              {t('about.title')}
             </h2>
             
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">

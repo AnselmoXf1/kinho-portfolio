@@ -33,7 +33,7 @@ export function Certificates() {
           className="mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold flex items-center gap-3">
-            <span className="text-primary">04.</span> {t('certificates.title')}
+            {t('certificates.title')}
           </h2>
         </motion.div>
 
