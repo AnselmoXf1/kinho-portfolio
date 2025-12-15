@@ -1,0 +1,47 @@
+Cria um site de portfólio profissional e multilíngue para um Programador e Designer chamado Kinho.
+
+Ele é estudante de Engenharia Informática e Tecnologias, tem 22 anos e faz parte da startup Ku_kulaDevs.
+
+É especializado em soluções digitais modernas, desenvolvimento web usando Django, Python, HTML, CSS, Java e JavaScript, Design UI/UX e sistemas full-stack.
+Possui conhecimentos básicos em C++ e Programação Orientada a Objetos com Java.
+
+O site deve permitir a troca de idiomas entre:
+- Inglês
+- Português
+- Espanhol
+Inclui um seletor de idiomas visível (EN / PT / ES) no cabeçalho ou menu de navegação.
+
+O portfólio deve conter as seguintes secções:
+
+1. **Secção Principal (Hero)**  
+   - Título forte e confiante  
+   - Pequena introdução de Kinho como Programador e Designer  
+
+2. **Secção “Sobre Mim”**  
+   - Texto profissional e claro, mencionando idade, formação, startup Ku_kulaDevs, especializações, habilidades e objetivo de transformar ideias em produtos digitais funcionais  
+
+3. **Secção de Projetos**  
+   - Destaque para o projeto **IAgroMoz**, um sistema web agrícola inteligente com:  
+     - Recomendações climáticas  
+     - Assistência ao utilizador  
+     - Comunidade agrícola  
+     - Marketplace  
+   - Tecnologias: Django, Python, UI/UX Design, Desenvolvimento Web Full-Stack  
+
+4. **Secção de Habilidades**  
+   - Django, Python, HTML, CSS, Java, JavaScript, UI/UX Design, Desenvolvimento Web Full-Stack, C++ (básico)  
+
+5. **Secção de Certificados e Diplomas de Honra**  
+   - Workshop de Desenvolvimento Web – patrocinado pela MozDez (HTML, CSS, JS, UI/UX)  
+   - Workshop de Programação e Inovação Tecnológica – patrocinado pela MozDez (Python, Django, Full-Stack)  
+   - Diplomas de Honra por contribuições em projetos acadêmicos e startups  
+
+6. **Secção de Contacto**  
+   - Telefone: 870038117  
+   - WhatsApp: https://wa.me/qr/3U3UMZKWPTHGJ1  
+   - LinkedIn: https://www.linkedin.com/in/isidro-guiamba-0b3211346/  
+
+**Estilo do design:**  
+- Moderno, limpo, escuro, profissional  
+- Animações suaves e elegantes  
+- Layout totalmente responsivo para desktop e mobile
