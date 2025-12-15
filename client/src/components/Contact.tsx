@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, MessageSquare, Linkedin, Send } from "lucide-react";
+import { Phone, MessageSquare, Linkedin, Send, Mail } from "lucide-react";
 
 export function Contact() {
   const { t } = useTranslation();
@@ -47,6 +47,20 @@ export function Contact() {
                 </div>
               </CardContent>
             </Card>
+
+            <a href="mailto:isidroguiamba@gmail.com" className="block">
+              <Card className="bg-card/50 border-primary/10 hover:border-primary/30 transition-colors cursor-pointer group">
+                <CardContent className="flex items-center gap-4 p-6">
+                  <div className="w-12 h-12 rounded-full bg-red-500/10 flex items-center justify-center text-red-500 group-hover:bg-red-500/20 transition-colors">
+                    <Mail className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground">{t('contact.email')}</h3>
+                    <p className="text-muted-foreground">isidroguiamba@gmail.com</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </a>
 
             <a 
               href="https://wa.me/qr/3U3UMZKWPTHGJ1" 

@@ -48,6 +48,7 @@ const resources = {
       contact: {
         title: "Get In Touch",
         phone: "Phone",
+        email: "Email",
         whatsapp: "WhatsApp",
         linkedin: "LinkedIn"
       }
@@ -99,6 +100,7 @@ const resources = {
       contact: {
         title: "Contacto",
         phone: "Telefone",
+        email: "Email",
         whatsapp: "WhatsApp",
         linkedin: "LinkedIn"
       }
@@ -150,6 +152,7 @@ const resources = {
       contact: {
         title: "Contacto",
         phone: "Teléfono",
+        email: "Email",
         whatsapp: "WhatsApp",
         linkedin: "LinkedIn"
       }
