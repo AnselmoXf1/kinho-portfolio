@@ -4,6 +4,14 @@
   "outputDirectory": "dist/public",
   "routes": [
     {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/(favicon\\.png|opengraph\\.jpg)",
+      "dest": "/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
