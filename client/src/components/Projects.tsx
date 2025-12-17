@@ -1,13 +1,8 @@
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { ExternalLink, CloudSun, Users, ShoppingCart, Info } from "lucide-react";
 import iagroLogo from "@assets/Captura_de_tela_2025-08-31_174719_1765822512653.png";
 
 export function Projects() {
-  const { t } = useTranslation();
-
   return (
     <section id="projects" className="py-20">
       <div className="container px-6">
@@ -18,8 +13,8 @@ export function Projects() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold flex items-center gap-3">
-            {t('projects.title')}
+          <h2 className="text-3xl md:text-4xl font-heading font-bold">
+            Projetos
           </h2>
         </motion.div>
 
@@ -45,46 +40,47 @@ export function Projects() {
             {/* Content Side */}
             <div className="p-8 md:p-12 flex flex-col justify-center space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-foreground mb-2 flex items-center gap-2">
-                  {t('projects.iagromoz.title')}
+                <h3 className="text-2xl font-bold text-foreground mb-2">
+                  IAgroMoz
                 </h3>
-                <p className="text-primary font-medium mb-4">{t('projects.iagromoz.subtitle')}</p>
+                <p className="text-primary font-medium mb-4">Plataforma Agrícola Inteligente</p>
                 <p className="text-muted-foreground leading-relaxed">
-                  {t('projects.iagromoz.description')}
+                  Uma plataforma completa para agricultores moçambicanos com previsão do tempo, 
+                  assistência técnica, comunidade e marketplace integrado.
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-4 py-4">
                 <div className="flex items-center gap-2 text-sm text-foreground/80">
                   <CloudSun className="h-4 w-4 text-primary" />
-                  {t('projects.iagromoz.features.weather')}
+                  Previsão do Tempo
                 </div>
                 <div className="flex items-center gap-2 text-sm text-foreground/80">
                   <Info className="h-4 w-4 text-primary" />
-                  {t('projects.iagromoz.features.assistance')}
+                  Assistência Técnica
                 </div>
                 <div className="flex items-center gap-2 text-sm text-foreground/80">
                   <Users className="h-4 w-4 text-primary" />
-                  {t('projects.iagromoz.features.community')}
+                  Comunidade
                 </div>
                 <div className="flex items-center gap-2 text-sm text-foreground/80">
                   <ShoppingCart className="h-4 w-4 text-primary" />
-                  {t('projects.iagromoz.features.marketplace')}
+                  Marketplace
                 </div>
               </div>
 
               <div className="flex flex-wrap gap-2">
                 {['Django', 'Python', 'Full-Stack', 'UI/UX'].map((tech) => (
-                  <Badge key={tech} variant="outline" className="border-primary/30 text-primary">
+                  <span key={tech} className="px-3 py-1 text-xs border border-primary/30 text-primary rounded-full">
                     {tech}
-                  </Badge>
+                  </span>
                 ))}
               </div>
 
               <div className="pt-4">
-                <Button variant="default" className="gap-2">
-                   View Project <ExternalLink className="h-4 w-4" />
-                </Button>
+                <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-md flex items-center gap-2 transition-colors">
+                   Ver Projeto <ExternalLink className="h-4 w-4" />
+                </button>
               </div>
             </div>
           </div>

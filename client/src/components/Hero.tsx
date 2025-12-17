@@ -1,12 +1,9 @@
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Linkedin, Mail } from "lucide-react";
 import kinhoPhoto from "@assets/Design_sem_nome_1765822512655.jpg";
 import heroBg from "@assets/generated_images/abstract_blue_technology_background_with_digital_waves_and_code_elements_for_hero_section.png";
 
 export function Hero() {
-  const { t } = useTranslation();
 
   return (
     <section 
@@ -30,29 +27,32 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="space-y-6"
         >
-          <div className="inline-block px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium">
-            {t('hero.subtitle')}
+          <div className="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-500 text-sm font-medium">
+            Conhecido por 'Kinho' | Programador e Designer
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            <span className="text-foreground">{t('hero.title')}</span>
+          <h1 className="text-5xl md:text-7xl font-heading font-bold leading-tight">
+            <span className="text-foreground">Isidro Helder Guiamba</span>
             <span className="text-primary">.</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-lg leading-relaxed">
-            {t('hero.tagline')}
+            Transformando Ideias em Produtos Digitais Funcionais
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-8">
-              {t('hero.cta')} <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <button 
+              onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-8 py-3 flex items-center transition-colors"
+            >
+              Ver Meu Trabalho <ArrowRight className="ml-2 h-4 w-4" />
+            </button>
             
             <div className="flex items-center gap-4 ml-4">
-              <a href="https://www.linkedin.com/in/isidro-guiamba-0b3211346/" target="_blank" rel="noreferrer" className="p-2 rounded-full bg-secondary/50 hover:bg-primary/20 text-foreground hover:text-primary transition-all">
+              <a href="https://www.linkedin.com/in/isidro-guiamba-0b3211346/" target="_blank" rel="noreferrer" className="p-2 rounded-full bg-muted hover:bg-primary/20 text-foreground hover:text-primary transition-all">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="mailto:contact@kinho.dev" className="p-2 rounded-full bg-secondary/50 hover:bg-primary/20 text-foreground hover:text-primary transition-all">
+              <a href="mailto:isidroguiamba@gmail.com" className="p-2 rounded-full bg-muted hover:bg-primary/20 text-foreground hover:text-primary transition-all">
                 <Mail className="h-5 w-5" />
               </a>
             </div>

@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
 import { Code2, Database, Layout, Terminal } from "lucide-react";
 
 export function Skills() {
-  const { t } = useTranslation();
-
   const skillCategories = [
     {
       title: "Backend & Core",
@@ -38,8 +35,8 @@ export function Skills() {
           transition={{ duration: 0.6 }}
           className="mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold flex items-center gap-3">
-            {t('skills.title')}
+          <h2 className="text-3xl md:text-4xl font-heading font-bold">
+            Habilidades
           </h2>
         </motion.div>
 

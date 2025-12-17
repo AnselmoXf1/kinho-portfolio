@@ -1,13 +1,8 @@
 import { useState, useEffect } from "react";
-import { Link } from "wouter";
-import { useTranslation } from "react-i18next";
-import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Navigation() {
-  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
@@ -20,11 +15,11 @@ export function Navigation() {
   }, []);
 
   const navLinks = [
-    { name: t('nav.about'), href: "#about" },
-    { name: t('nav.projects'), href: "#projects" },
-    { name: t('nav.skills'), href: "#skills" },
-    { name: t('nav.certificates'), href: "#certificates" },
-    { name: t('nav.contact'), href: "#contact" },
+    { name: "Sobre", href: "#about" },
+    { name: "Projetos", href: "#projects" },
+    { name: "Habilidades", href: "#skills" },
+    { name: "Certificados", href: "#certificates" },
+    { name: "Contato", href: "#contact" },
   ];
 
   const scrollToSection = (id: string) => {
@@ -61,20 +56,16 @@ export function Navigation() {
               {link.name}
             </button>
           ))}
-          <LanguageSwitcher />
         </div>
 
         {/* Mobile Nav Toggle */}
-        <div className="md:hidden flex items-center gap-4">
-          <LanguageSwitcher />
-          <Button
-            variant="ghost"
-            size="icon"
+        <div className="md:hidden">
+          <button
             onClick={() => setIsMobileOpen(!isMobileOpen)}
-            className="text-foreground"
+            className="p-2 text-foreground hover:text-primary transition-colors"
           >
-            {isMobileOpen ? <X /> : <Menu />}
-          </Button>
+            {isMobileOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
       </div>
 
